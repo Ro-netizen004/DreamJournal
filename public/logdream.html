@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <title>Log a Dream</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .form-container {
+      max-width: 800px;
+      margin: 4rem auto;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 2rem 3rem;
+      border-radius: 25px;
+      font-family: 'Quicksand', sans-serif;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      font-family: 'Indie Flower', cursive;
+      font-size: 3rem;
+      color: #3d7d9b;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      font-size: 1.2rem;
+      display: block;
+      margin-top: 1rem;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-family: 'Quicksand', sans-serif;
+      resize: vertical;
+    }
+
+    textarea {
+      min-height: 150px;
+    }
+
+    .form-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .form-buttons button {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">DreamVault ✧</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dreams.html">GlobalDreams</a></li>
+        <li><a href="logdream.html">Write</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="background-image: url('./images/output-onlinegiftools.gif');">
+    <div class="form-container">
+      <h2>Log a Dream</h2>
+      <form id="dreamForm">
+        <label for="title">Dream Title</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="description">Dream Description</label>
+        <textarea id="description" name="description" placeholder="Describe your dream in detail..." required></textarea>
+
+        <label for="location">Location (optional)</label>
+        <input type="text" id="location" name="location" placeholder="City, Country or Unknown" />
+
+        <label for="tags">Tags (comma-separated)</label>
+        <input type="text" id="tags" name="tags" placeholder="e.g., flying, ocean, surreal" />
+
+        <label for="submittedBy">Name or Nickname</label>
+        <input type="text" id="submittedBy" name="submittedBy" placeholder="Anonymous" />
+
+        <div class="form-buttons">
+          <button type="submit" class="button">Save Dream</button>
+          <button type="reset" class="button">Clear</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Dream Journal. Made with ☁️ and curiosity.
+  </footer>
+
+  <script src="logdream.js"></script>
+</body>
+</html>

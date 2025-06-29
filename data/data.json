@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Flying Over Mountains",
+    "description": "I was flying above snow-covered mountains, feeling completely free and weightless.",
+    "date": "2025-06-25",
+    "location": "Colorado, USA",
+    "tags": ["flying", "freedom", "nature"],
+    "submittedBy": "Anonymous"
+  },
+  {
+    "id": 2,
+    "title": "Lost in a Giant Library",
+    "description": "I wandered through endless aisles of ancient books. Some whispered when I walked past.",
+    "date": "2025-06-22",
+    "location": "Unknown",
+    "tags": ["mystery", "books", "surreal"],
+    "submittedBy": "Anonymous"
+  },
+  {
+    "id": 3,
+    "title": "Meeting a Talking Cat",
+    "description": "A tuxedo cat guided me through a glowing forest, explaining the rules of the dream world.",
+    "date": "2025-06-20",
+    "location": "Tokyo, Japan",
+    "tags": ["animals", "talking", "fantasy"],
+    "submittedBy": "Anonymous"
+  }
+
+]

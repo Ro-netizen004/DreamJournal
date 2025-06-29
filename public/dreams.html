@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <title>My Dreams</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .dreams-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 25px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  font-family: 'Quicksand', sans-serif;
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+}
+
+.dreams-container h2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 3.2rem;
+  color: #3d7d9b;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(61, 125, 155, 0.5);
+}
+
+.dream-card {
+  background-color: #fff;
+  border-left: 8px solid #a77b8c; /* deeper color for stronger accent */
+  padding: 1.8rem 2.2rem;
+  margin-bottom: 1.8rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
+
+.dream-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dream-card h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 2rem;
+  color: #7c9ab0;
+  letter-spacing: 0.02em;
+}
+
+.dream-card .date {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.dream-card .location {
+  font-size: 0.95rem;
+  color: #8a7e89;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.dream-card p {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 0.8rem;
+}
+
+.dream-card .tags {
+  font-size: 0.95rem;
+  color: #9a7f90;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-style: italic;
+}
+
+.dream-card .submitted-by {
+  font-size: 0.9rem;
+  color: #a3919d;
+  font-weight: 600;
+  text-align: right;
+  font-style: italic;
+  margin-top: 0.6rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .dreams-container {
+    margin: 1.5rem 1rem;
+    padding: 1.5rem 1.8rem;
+  }
+  .dream-card h3 {
+    font-size: 1.6rem;
+  }
+  .dream-card p, .dream-card .location, .dream-card .tags, .dream-card .submitted-by {
+    font-size: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">DreamVault ✧</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dreams.html">GlobalDreams</a></li>
+        <li><a href="logdream.html">Write</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="background-image: url('./images/output-onlinegiftools.gif');">
+    <div class="dreams-container">
+      <h2>Dream Entries</h2>
+
+      <!-- Dream Entry Example -->
+      <div class="dream-card">
+      </div>
+
+      <!-- More dream-card blocks can be added dynamically later -->
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Dream Journal. Made with ☁️ and curiosity.
+  </footer>
+  <script src="dreams.js"></script>
+</body>
+</html>
