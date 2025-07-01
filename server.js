@@ -3,7 +3,7 @@ import http from "node:http";
 import { serveStatic } from "./utils/serveStatic.js";
 import { handleGet } from "./routeHandlers/routeHandler.js";
 import { handlePost } from "./routeHandlers/routeHandler.js";
-const PORT = 2000;
+const PORT = process.env.PORT || 2000;
 const __dirname = import.meta.dirname;
 
 const server = http.createServer(async(req, res)=>{
