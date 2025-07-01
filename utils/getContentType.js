@@ -21,5 +21,5 @@ const fileType = {
 };
 
 export function getContentType(ext) {
-  return fileType[ext.toLowerCase()] || "application/octet-stream";
+  return fileType[ext.toLowerCase()] || "text/css";
 }
